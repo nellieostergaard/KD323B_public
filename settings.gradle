@@ -1,2 +1,3 @@
 include ':lecture_1_examples'
-include ':lecture_1_examples', ':lecture2_example_jaffar'
+include ':lecture2_example_jaffar'
+include ':lecture_2_example'

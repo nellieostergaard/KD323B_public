@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":lecture_1_examples" />
+        <option name="GRADLE_PROJECT_PATH" value=":lecture_2_example" />
       </configuration>
     </facet>
     <facet type="android" name="Android">
