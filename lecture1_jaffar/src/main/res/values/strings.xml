@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lecture1</string>
+
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="button_text">OK</string>
+</resources>
