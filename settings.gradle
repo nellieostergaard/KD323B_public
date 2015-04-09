@@ -1,1 +1,4 @@
-include ':lecture_1_examples', ':lecture_2_examples', ':assignment_3_starter_kit'
+include ':lecture_1_examples',
+include ':lecture_2_example'
+include ':lecture2_example_jaffar'
+include ':assignment_3_starter_kit'
