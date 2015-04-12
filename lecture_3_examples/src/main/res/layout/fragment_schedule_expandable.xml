@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.mah.k3.kd323b_example_expandablelist.ScheduleExpandableFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:entries="@array/courses" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:id="@+id/btn_refresh"
+            android:layout_gravity="left|top" />
+
+        <ExpandableListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandableListView"
+            android:layout_gravity="left|top" />
+    </LinearLayout>
+</FrameLayout>

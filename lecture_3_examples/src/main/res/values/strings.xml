@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KD323B_Example_expandableList</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Refresh</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="courses">
+        <item>KD323B-20151-K3522</item>
+        <item>KD324A-20151-K3519</item>
+        <item>KD109A-20151-52217</item>
+    </string-array>
+
+</resources>
