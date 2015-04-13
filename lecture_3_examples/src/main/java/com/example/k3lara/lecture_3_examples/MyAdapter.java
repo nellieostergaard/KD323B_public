@@ -37,9 +37,12 @@ public class MyAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         LayoutInflater li = (LayoutInflater) this.c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = li.inflate(R.layout.groupexpl_layout,null);
-        TextView tv = (TextView) convertView.findViewById(R.id.tv_group);
+        TextView tvCourse = (TextView) convertView.findViewById(R.id.tv_course);
         String course = myItems.get(groupPosition).getCourse();
-        tv.setText(course);
+        tvCourse.setText(course);
+        TextView tvDate =(TextView) convertView.findViewById(R.id.tv_date);
+        String date = myItems.get(groupPosition).getDate();
+        tvDate.setText(date);
         return convertView;
     }
 
@@ -47,9 +50,18 @@ public class MyAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         LayoutInflater li = (LayoutInflater) this.c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = li.inflate(R.layout.group_child_layout,null);
-        TextView tv = (TextView) convertView.findViewById(R.id.tv_child);
-        String course = myItems.get(groupPosition).getMoment();
-        tv.setText(course);
+        TextView tvMoment = (TextView) convertView.findViewById(R.id.tv_moment);
+        String moment = myItems.get(groupPosition).getMoment();
+        tvMoment.setText(moment);
+        TextView tvRoom = (TextView) convertView.findViewById(R.id.tv_room);
+        String room = myItems.get(groupPosition).getRoom();
+        tvRoom.setText(room);
+        TextView tvStart = (TextView) convertView.findViewById(R.id.tv_start);
+        String start = myItems.get(groupPosition).getStartTime();
+        tvStart.setText(start);
+        TextView tvEnd = (TextView) convertView.findViewById(R.id.tv_end);
+        String end = myItems.get(groupPosition).getEndTime();
+        tvEnd.setText(end);
         return convertView;
     }
 
