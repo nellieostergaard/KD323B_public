@@ -22,7 +22,7 @@ public class Parser {
   	 * Use this Url to test from a browser:
   	 * http://www.labs.skanetrafiken.se/v2.2/querystation.asp?inpPointfr=malmö
   	 * More information
-  	 * @param serachStart string to search for
+  	 * @param searchStart string to search for
   	 * @return list of stations that fulfils the search criteria. 
   	 * Always returns a number of central stations like Malm� Copenhagen etc
   	 * */
@@ -54,7 +54,7 @@ public class Parser {
   	 * Use this URL to test from a browser:
   	 * http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=malm�%20C|80000|0&selPointTo=landskrona|82000|0&LastStart=2015-02-24 16:38
   	 * More information
-  	 * @param serachURL string to search for
+  	 * @param searchURL string to search for
   	 * @return a Jourenys object that contains information on journeys from a station to another specified station. 
   	 * */
 	public static Journeys getJourneys(String searchURL){
@@ -139,7 +139,6 @@ public class Parser {
   	 * Use this Url to test from a browser from ub�tshallen:
   	 * http://www.labs.skanetrafiken.se/v2.2/stationresults.asp?selPointFrKey=80046 
   	 * More information
-  	 * @param Station departure station
   	 * @return a Lines object containing information on lines leaving the specified station. 
   	 * */
 	public static Lines getStationResults(Station station){
