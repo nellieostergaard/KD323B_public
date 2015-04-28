@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Skanetrafiken"
+    android:id="@+id/fragment_rese_layout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/avgangAvgang"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:entries="@array/avgangAvgang"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/destination"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:entries="@array/destination"
+
+            />
+
+
+
+
+
+        <ExpandableListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandableListView"
+            android:layout_gravity="left|top"
+            android:groupIndicator="@null"
+
+
+            />
+    </LinearLayout>
+</FrameLayout>

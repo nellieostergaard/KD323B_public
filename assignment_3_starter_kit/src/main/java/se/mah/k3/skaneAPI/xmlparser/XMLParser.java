@@ -87,4 +87,3 @@ public class XMLParser {
         return this.getElementValue(n.item(0));
     }
 }
-
